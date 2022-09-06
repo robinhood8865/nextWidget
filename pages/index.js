@@ -12,6 +12,7 @@ export default function Home() {
     modifiers: [{ name: "offset", options: { offset: [10, 10] } }],
   });
   const [showWidget, setShowWidget] = useState(false);
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
@@ -45,8 +46,8 @@ export default function Home() {
         )}
       </button>
       {showWidget && (
-        <div className="absolute right-4 bottom-24 ">
-          <Layout />
+        <div className="absolute right-4 bottom-10 ">
+          <Layout setShowWidget={setShowWidget} />
         </div>
       )}
       {/* {showWidget && (<div 

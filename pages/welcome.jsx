@@ -1,28 +1,10 @@
 import React, { Fragment, useEffect } from "react";
 import PropTypes from "prop-types";
 
-const Welcome = () => {
+const Welcome = ({ setShowPage }) => {
   return (
     <div className="relative ">
       <div className="static w-full h-[250px] bg-light-sky rounded-t-md  ">
-        <div className="absolute top-[15px] h-[20px] w-[20px] right-[15px] rounded-full bg-black p-[2.2px]">
-          <svg
-            className="text-white h-4 w-4 "
-            r
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="3"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </div>
         <div className="absolute top-[25px] left-[25px] text-white font-bold">
           Welcome to
         </div>
@@ -37,7 +19,12 @@ const Welcome = () => {
             With more ways to unlock exciting perks, this is your all access
             pass to exculsive rewards.
           </p>
-          <button className="mt-[14px] w-[130px] h-[50px] ml-[110px] rounded-[5px] bg-light-sky text-white">
+          <button
+            onClick={() => {
+              setShowPage(1);
+            }}
+            className="mt-[14px] w-[130px] h-[50px] ml-[110px] rounded-[5px] bg-light-sky text-white"
+          >
             <p className="text-[16px] font-bold">Join now</p>
           </button>
           <p className="mt-[7px]  text-center left-[94px] text-[16px]  text-user-gray">
