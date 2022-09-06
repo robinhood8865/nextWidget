@@ -3,7 +3,7 @@ import { usePopper } from "react-popper";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Welcome from "./welcome";
+import Layout from "./layout";
 
 export default function Home() {
   const [referenceElement, setReferenceElement] = useState(null);
@@ -23,15 +23,30 @@ export default function Home() {
         onClick={() => {
           setShowWidget(!showWidget);
         }}
-        ref={setReferenceElement}
-        className="absolute bottom-4 right-4 p-2 rounded-l-lg rounded-t-lg bg-blue-700 hover:bg-blue-600 shadow-md hover:shadow-lg text-white"
+        // ref={setReferenceElement}
+        className="z-10 absolute transition bottom-4 right-4 p-2 rounded-full h-[64px] w-[64px] bg-user-gray hover:bg-light-sky shadow-md hover:shadow-lg text-white"
         type="button"
       >
-        Restaurant
+        {showWidget && (
+          <svg
+            className="text-white h-13 w-13"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinejoin="round"
+              strokeWidth="3"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        )}
       </button>
       {showWidget && (
-        <div className="absolute right-4 bottom-20">
-          <Welcome />
+        <div className="absolute right-4 bottom-24 ">
+          <Layout />
         </div>
       )}
       {/* {showWidget && (<div 
