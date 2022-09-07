@@ -33,7 +33,14 @@ const Layout = ({ setShowWidget }) => {
             />
           </svg>
         </div>
-        {showPage == 0 && <Welcome setShowPage={setShowPage} />}
+        {showPage == 0 && (
+          <Welcome
+            className="transition
+            duration-150
+            ease-in-out"
+            setShowPage={setShowPage}
+          />
+        )}
         {showPage == 1 && (
           <>
             <Top setShowPage={setShowPage} />
