@@ -43,7 +43,12 @@ const Welcome = ({ setShowPage }) => {
         <p className="mt-[14px]  text-center left-[94px] text-[16px]  text-user-gray">
           Buy exculsive vouchers and enjoy savings
         </p>
-        <button className="mt-[14px] w-[130px] h-[50px] ml-[110px] rounded-[5px] bg-light-sky">
+        <button
+          onClick={() => {
+            setShowPage(2);
+          }}
+          className="mt-[14px] w-[130px] h-[50px] ml-[110px] rounded-[5px] bg-light-sky"
+        >
           <p className="text-[16px] text-white font-bold">Browse</p>
         </button>
       </div>

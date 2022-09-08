@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 import Welcome from "./welcome";
 import Register from "./regiter";
 import Top from "./top";
+import BuyVouchers from "./buyVouchers";
+import Confirm from "./confirm";
+import Checkout from "./checkout";
 
 const Layout = ({ setShowWidget }) => {
   const [showPage, setShowPage] = useState(0);
@@ -45,6 +48,24 @@ const Layout = ({ setShowWidget }) => {
           <>
             <Top setShowPage={setShowPage} />
             <Register setShowPage={setShowPage} />
+          </>
+        )}
+        {showPage == 2 && (
+          <>
+            <Top setShowPage={setShowPage} />
+            <BuyVouchers setShowPage={setShowPage} />
+          </>
+        )}
+        {showPage == 3 && (
+          <>
+            <Top setShowPage={setShowPage} />
+            <Checkout setShowPage={setShowPage} />
+          </>
+        )}
+        {showPage == 4 && (
+          <>
+            <Top setShowPage={setShowPage} />
+            <Confirm setShowPage={setShowPage} />
           </>
         )}
       </div>
