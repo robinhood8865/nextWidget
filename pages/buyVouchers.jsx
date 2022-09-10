@@ -76,20 +76,38 @@ const BuyVouchers = ({ setShowPage }) => {
             </p>
           </div>
           <div className="flex items-center">
-            <div className="h-[24px] w-[24px]  bg-user-green rounded-full">
-              <img
+            <div className="w-[24px] h-[24px]  text-[24px] flex items-center justify-center font-[100]   leading-[20px] text-white rounded-full ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="2"
+                viewBox="0 0 10 2"
+                fill="none"
+              >
+                <line
+                  x1="0.9"
+                  y1="1.1"
+                  x2="9.1"
+                  y2="1.1"
+                  stroke="#999999"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                />
+              </svg>
+              {/* <img
                 className="h-[24px] w-[24px]  "
                 src="/minus-svgrepo-com.svg"
-              />
+              /> */}
             </div>
             <div className="text-[14px] font-bold text-user-gray mx-[12px]">
               1
             </div>
-            <div className="h-[24px] w-[24px] bg-user-green rounded-full">
-              <img
-                className="h-[24px] w-[24px]  "
+            <div className="w-[24px] h-[24px]  text-[24px] flex items-center justify-center font-[100] bg-user-green  leading-[20px] text-white rounded-full ">
+              {/* <img
+                className="h-[24px] w-[24px] bg-user-green"
                 src="/plus-svgrepo-com.svg"
-              />
+              /> */}
+              +
             </div>
           </div>
         </div>
@@ -97,8 +115,10 @@ const BuyVouchers = ({ setShowPage }) => {
       <div className="mx-[37px] mt-[30px] flex justify-between items-end">
         <button
           onClick={() => {
-            setShowPage(4);
+            setShowPage(3);
           }}
+          // https://buy.stripe.com/test_bIYdRmaxvf119OMeUU
+
           className=" rounded-md w-[130px] h-[50px] bg-light-sky text-white text-[16px]"
         >
           Checkout
