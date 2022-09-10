@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect } from "react";
-import { ReactComponent as ArrowIcon } from "./../assets/arrow-left.svg";
 import PropTypes from "prop-types";
 
 const Register = ({ setShowPage }) => {
@@ -134,7 +133,7 @@ const Register = ({ setShowPage }) => {
       </div>
       <div className="relative mt-[28px] ml-[116px] w-[168px] h-[168px] ">
         <div className="w-full h-full flex items-center justify-center ">
-          <img src="/image4.svg" />
+          <img src="/image4.png" />
         </div>
 
         <div className="flex items-center justify-center px-[5px] rounded-full shadow-[0_2px_5px_0_rgba(0,0,0,0.08)] bg-white text-[black] text-[12px] font-[500] mt-[-34px] ml-[45px] h-[20px] w-[70px]">
@@ -194,7 +193,7 @@ const Register = ({ setShowPage }) => {
                     </label>
 
                     <input
-                      className="rounded-[8px] shadow-[0_2px_5px_0_rgba(0,0,0,0.08)] border-[#3C42571F] border-[1px] w-full h-[40px] text-sm p-2.5"
+                      className="focus:outline-none focus:ring-0  rounded-[8px] shadow-[0_2px_5px_0_rgba(0,0,0,0.08)] border-[#3C42571F] border-[1px] w-full h-[40px] text-sm p-2.5"
                       type="email"
                       id="email"
                     />
@@ -211,9 +210,10 @@ const Register = ({ setShowPage }) => {
                       <div>
                         <div className="flex justify-between px-[12px] py-[9px] rounded-t-[8px]  w-full h-[40px]  ">
                           <input
+                            className="focus:outline-none focus:ring-0"
                             type="email"
                             id="email"
-                            value="1234 1234 1234 1234"
+                            placeholder="1234 1234 1234 1234"
                           />
                           <div className="flex items-center">
                             <div>
@@ -238,10 +238,10 @@ const Register = ({ setShowPage }) => {
                         <div className="flex justify-between rounded-b-[8px]  border-t w-full h-[40px] ">
                           <div className="px-[12px] py-[9px] rounded-b-l-[8px]  border-r  w-[163px] h-[40px] ">
                             <input
-                              // type="email"
-                              // id="email"
-                              className="w-full"
-                              value="MM / YY"
+                              // type="date"
+                              id="date"
+                              className="focus:outline-none focus:ring-0 w-full"
+                              placeholder="MM / YY"
                             />
                           </div>
 
@@ -249,8 +249,8 @@ const Register = ({ setShowPage }) => {
                             <input
                               // type="email"
                               // id="email"
-                              className="w-full"
-                              value="CVC"
+                              className="focus:outline-none focus:ring-0 w-full"
+                              placeholder="CVC"
                             />
                             <img src="CVC Card.svg" />
                           </div>
@@ -268,7 +268,7 @@ const Register = ({ setShowPage }) => {
                     </label>
 
                     <input
-                      className="rounded-[8px] shadow-[0_2px_5px_0_rgba(0,0,0,0.08)] border-[#3C42571F] border-[1px] w-full h-[40px] text-sm p-2.5"
+                      className="focus:outline-none focus:ring-0 rounded-[8px] shadow-[0_2px_5px_0_rgba(0,0,0,0.08)] border-[#3C42571F] border-[1px] w-full h-[40px] text-sm p-2.5"
                       type="email"
                       id="email"
                     />
@@ -291,7 +291,7 @@ const Register = ({ setShowPage }) => {
                             </label>
 
                             <select
-                              className="relative w-full focus:z-10 text-black text-[16px]"
+                              className="focus:outline-none focus:ring-0 relative w-full focus:z-10 text-black text-[16px]"
                               id="country"
                               name="country"
                               autoComplete="country-name"
@@ -313,8 +313,8 @@ const Register = ({ setShowPage }) => {
                             <input
                               // type="email"
                               // id="email"
-                              className="w-full"
-                              value=" ZIP"
+                              className="focus:outline-none focus:ring-0  w-full"
+                              placeholder="ZIP"
                             />
                           </div>
                         </div>
@@ -325,7 +325,7 @@ const Register = ({ setShowPage }) => {
                   <div className="col-span-6 mt-[32px]">
                     <button
                       className="w-full h-[48px] py-[12px] bg-[#3C4257] rounded-[4px] shadow-[0_1px_1px_0_rgba(0,0,0,0.08)] "
-                      type="submit"
+                      // type="submit"
                     >
                       Pay $100.00
                     </button>
