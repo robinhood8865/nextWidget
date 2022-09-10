@@ -203,7 +203,7 @@ const Register = ({ setShowPage }) => {
                       className="block mb-[8px] text-[14px] font-[600] text-gray-600 "
                       htmlFor="email"
                     >
-                      Country or region
+                      Card information
                     </label>
 
                     <div className="rounded-[8px] shadow-[0_2px_5px_0_rgba(0,0,0,0.08)] border-[#3C42571F] border-[1px] w-full h-[80px] text-[16px] font-[500] ">
@@ -211,8 +211,8 @@ const Register = ({ setShowPage }) => {
                         <div className="flex justify-between px-[12px] py-[9px] rounded-t-[8px]  w-full h-[40px]  ">
                           <input
                             className="focus:outline-none focus:ring-0"
-                            type="email"
-                            id="email"
+                            type="number"
+                            id="cardinformation"
                             placeholder="1234 1234 1234 1234"
                           />
                           <div className="flex items-center">
@@ -247,8 +247,8 @@ const Register = ({ setShowPage }) => {
 
                           <div className="flex justify-between px-[12px] py-[9px] rounded-b-l-[8px]  border-r  w-[163px] h-[40px] ">
                             <input
-                              // type="email"
-                              // id="email"
+                              type="text"
+                              id="cvc"
                               className="focus:outline-none focus:ring-0 w-full"
                               placeholder="CVC"
                             />
@@ -269,8 +269,8 @@ const Register = ({ setShowPage }) => {
 
                     <input
                       className="focus:outline-none focus:ring-0 rounded-[8px] shadow-[0_2px_5px_0_rgba(0,0,0,0.08)] border-[#3C42571F] border-[1px] w-full h-[40px] text-sm p-2.5"
-                      type="email"
-                      id="email"
+                      type="text"
+                      id="cardname"
                     />
                   </div>
 
@@ -311,8 +311,8 @@ const Register = ({ setShowPage }) => {
                         <div className="rounded-b-[8px]  border-t w-full h-[40px] ">
                           <div className="px-[12px] py-[9px] w-full h-[40px] ">
                             <input
-                              // type="email"
-                              // id="email"
+                              type="text"
+                              id="zip"
                               className="focus:outline-none focus:ring-0  w-full"
                               placeholder="ZIP"
                             />
