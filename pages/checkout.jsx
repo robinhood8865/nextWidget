@@ -30,7 +30,7 @@ const Register = ({ setShowPage }) => {
             Restaurant ABC
           </p>
           <select
-            className="focus:z-10  text-[12px]"
+            className="focus:z-10  text-[12px] bg-white"
             id="country"
             name="country"
             autoComplete="country-name"
