@@ -193,7 +193,7 @@ const Register = ({ setShowPage }) => {
                     </label>
 
                     <input
-                      className="focus:outline-none focus:ring-0  rounded-[8px] shadow-[0_2px_5px_0_rgba(0,0,0,0.08)] border-[#3C42571F] border-[1px] w-full h-[40px] text-sm p-2.5"
+                      className="focus:outline-none focus:ring-0  bg-white rounded-[8px] shadow-[0_2px_5px_0_rgba(0,0,0,0.08)] border-[#3C42571F] border-[1px] w-full h-[40px] text-sm p-2.5"
                       type="email"
                       id="email"
                     />
@@ -210,7 +210,7 @@ const Register = ({ setShowPage }) => {
                       <div>
                         <div className="flex justify-between px-[12px] py-[9px] rounded-t-[8px]  w-full h-[40px]  ">
                           <input
-                            className="focus:outline-none focus:ring-0"
+                            className="focus:outline-none focus:ring-0 bg-white"
                             type="number"
                             id="cardinformation"
                             placeholder="1234 1234 1234 1234"
