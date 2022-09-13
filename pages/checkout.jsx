@@ -211,7 +211,7 @@ const Register = ({ setShowPage }) => {
                         <div className="flex justify-between px-[12px] py-[9px] rounded-t-[8px]  w-full h-[40px]  ">
                           <input
                             className="focus:outline-none focus:ring-0 bg-white"
-                            type="number"
+                            type="text"
                             id="cardinformation"
                             placeholder="1234 1234 1234 1234"
                           />
@@ -240,7 +240,7 @@ const Register = ({ setShowPage }) => {
                             <input
                               // type="date"
                               id="date"
-                              className="focus:outline-none focus:ring-0 w-full"
+                              className="focus:outline-none focus:ring-0 w-full bg-white"
                               placeholder="MM / YY"
                             />
                           </div>
@@ -249,7 +249,7 @@ const Register = ({ setShowPage }) => {
                             <input
                               type="text"
                               id="cvc"
-                              className="focus:outline-none focus:ring-0 w-full"
+                              className="focus:outline-none focus:ring-0 w-full bg-white"
                               placeholder="CVC"
                             />
                             <img src="CVC Card.svg" />
@@ -268,7 +268,7 @@ const Register = ({ setShowPage }) => {
                     </label>
 
                     <input
-                      className="focus:outline-none focus:ring-0 rounded-[8px] shadow-[0_2px_5px_0_rgba(0,0,0,0.08)] border-[#3C42571F] border-[1px] w-full h-[40px] text-sm p-2.5"
+                      className="bg-white focus:outline-none focus:ring-0 rounded-[8px] shadow-[0_2px_5px_0_rgba(0,0,0,0.08)] border-[#3C42571F] border-[1px] w-full h-[40px] text-sm p-2.5"
                       type="text"
                       id="cardname"
                     />
@@ -291,7 +291,7 @@ const Register = ({ setShowPage }) => {
                             </label>
 
                             <select
-                              className="focus:outline-none focus:ring-0 relative w-full focus:z-10 text-black text-[16px]"
+                              className="bg-white focus:outline-none focus:ring-0 relative w-full focus:z-10 text-black text-[16px]"
                               id="country"
                               name="country"
                               autoComplete="country-name"
@@ -313,7 +313,7 @@ const Register = ({ setShowPage }) => {
                             <input
                               type="text"
                               id="zip"
-                              className="focus:outline-none focus:ring-0  w-full"
+                              className="bg-white focus:outline-none focus:ring-0  w-full"
                               placeholder="ZIP"
                             />
                           </div>
