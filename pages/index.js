@@ -46,6 +46,7 @@ export default function Home() {
             />
           </svg>
         )}
+        {!showWidget && <img src="/custdelight-white-low-icon-low.png" />}
       </button>
       {showWidget && (
         <div className="absolute right-4 bottom-10 ">

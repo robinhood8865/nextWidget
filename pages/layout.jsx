@@ -12,7 +12,7 @@ const Layout = ({ setShowWidget }) => {
 
   return (
     <div>
-      <div className="w-[400px] h-[601px] rounded-md shadow-[0_20px_30px_0_rgba(28,040,50,0.2)] tracking-[-0.5px]">
+      <div className="w-[400px] h-[601px] bg-white rounded-md shadow-[0_20px_30px_0_rgba(28,040,50,0.2)] tracking-[-0.5px]">
         <div
           onClick={() => {
             setShowWidget(false);
