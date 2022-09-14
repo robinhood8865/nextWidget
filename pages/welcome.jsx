@@ -9,7 +9,7 @@ const Welcome = ({ setShowPage }) => {
           Welcome to
         </div>
         <div className="absolute top-[45px] left-[25px] text-white text-[24px] font-bold">
-          Restaurnat ABC
+          Restaurant ABC
         </div>
         <div className="absolute  w-[363px] h-[256px] rounded-md  bg-white left-[19px] top-[111px] shadow-[0_1px_4px_0_rgba(0,0,0,0.25)] ">
           <p className="mt-[35px] text-center left-[94px] text-[20px] leading-[23px] text-black font-bold">

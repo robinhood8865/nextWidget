@@ -70,7 +70,7 @@ const Layout = ({ setShowWidget }) => {
       </div>
       <div className="mt-[30px] w-full">
         <div className="text-user-gray flex justify-center text-[16px]">
-          <p className="">Powerd by</p>
+          <p className="">Powered by</p>
           <p className="ml-[5px] font-bold">Custdelight</p>
         </div>
       </div>
