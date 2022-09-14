@@ -38,7 +38,7 @@ const Top = ({ setShowPage }) => {
               />
             </svg>
           </div>
-          <div className="text-white text-[24px] font-bold">Restaurnat ABC</div>
+          <div className="text-white text-[24px] font-bold">Restaurant ABC</div>
         </div>
       </div>
     </div>
