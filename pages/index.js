@@ -27,7 +27,7 @@ export default function Home() {
           setShowWidget(!showWidget);
         }}
         // ref={setReferenceElement}
-        className="z-10 absolute transition bottom-4 right-4 p-2 rounded-full h-[64px] w-[64px] bg-user-gray hover:bg-light-sky shadow-md hover:shadow-lg text-white"
+        className="z-10 absolute transition bottom-4 right-4 p-2 rounded-full h-[64px] w-[64px] bg-light-sky shadow-md hover:shadow-lg text-white"
         type="button"
       >
         {showWidget && (
